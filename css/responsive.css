@@ -1,0 +1,374 @@
+/*Medium Layout: 1200*/
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .home-content{
+        top: 28%;
+        right: 10%;
+    }
+    .download-qr-code .qr-img img{
+        display: none;
+    }
+    .apps-store {
+        margin-left: 0;
+    }
+}
+
+
+/*Tablet Layout: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+    .logo h3{
+        font-size: 35px;
+        margin-top: 10px;
+    
+    }
+    .search-box img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .search-box input[type="search"] {
+        height: 55px;
+        padding-left: 45px;
+    }
+    .account img{
+        margin-left: 5px;
+        width: 25px;
+    }
+     .categories-menubar{
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    .categories-menubar a{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .categories-menubar span{
+        margin-left: 2px;
+    }
+    .home-content{
+        top: 20%;
+        right: 8%;
+    }
+    .home-content .text-1{
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .home-content .text-2{
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+    .home-content a{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .advantage-text {
+        padding: 8px 0;
+    }
+    .advantage-text h4{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .advantage-text p{
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 4px;
+    }
+    .offer-banner-text h2{
+        font-size: 22px;
+    }
+    .offer-banner-text a{
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+    .footer-contact h4{
+        font-size: 15px;   
+    }
+    .footer-content p{
+        font-size: 12px;
+    }
+    .inner-footer-content h2{
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    .quick-links ul li{
+        margin: 2px 0;
+    }
+    .quick-links ul li a{
+        font-size: 14px;
+    }
+    .social-media-icons img{
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .download-qr-code .qr-img img{
+        display: none;
+    }
+    .apps-store {
+        margin-left: 0;
+    }
+}
+
+
+
+
+/*Mobile Layout: 320px*/
+@media only screen and (max-width: 767px){
+    .top-header{
+        padding: 15px 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+    .logo h3{
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    .search-box input[type="search"] {
+        height: 50px;
+        padding-left: 55px;
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .search-box img {
+        width: 25px;
+        height: 25px;
+        top: 40%;
+        left: 4%;
+    }
+    .categories-list{
+        top: 48%;
+    }
+    .account-section {
+        display: none;
+    }
+    .language-select{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--secondary-color);
+    }
+    .navbar{
+        float: right;
+        margin-top: -58px;
+    }
+    .navbar ul li a{
+        margin-right: 5px;
+        color: #fff;
+    }
+    .phone-num {
+        display: none;
+    }
+
+
+
+    .home-content{
+        top: 5%;
+        right: 5%;
+    }
+    .home-content .text-1{
+        font-size: 20px;
+        margin-bottom: -15px;
+    }
+    .home-content .text-2{
+        font-size: 30px;
+        margin-bottom: -12px;
+    }
+    .home-content a{
+        padding: 3px 10px;
+        font-size: 10px;
+    }
+    .offer-banner-image img{
+        height: 120px;
+    }
+    .offer-banner-text{
+        padding: 0 10px;
+    }
+    .offer-banner-text h2{
+        font-size: 15px;
+    }
+    .offer-banner-text a{
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+    .offer-requirment{
+        top: 65%;
+        left: 30%;
+    }
+    .offer-requirment p{
+        font-size: 12px;
+    }
+    .section-title a{
+        font-size: 14px;
+        padding: 6px 10px;
+        margin-top: -56px;
+    }
+    .products .section-title h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .newsletter-bg-content{
+        top: 25%;
+        left: 15px;
+    }
+    .newsletter-bg-content p{
+        font-size: 15px;
+    }
+    .newsletter-bg-content h2{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .newsletter-bg-content input[type="email"] {
+        font-size: 12px;
+        padding: 5px 10px;
+        width: 200px;
+
+    }
+    .newsletter-bg-content input[type="submit"]{
+        font-size: 12px;
+        padding: 3px 5px;
+        margin-left: 0px;
+    }
+    .download-qr-code .qr-img img{
+        display: none;
+    }
+    .apps-store {
+        margin-left: 0;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+        .footer-contact h4{
+        font-size: 15px;   
+    }
+    .footer-content p{
+        font-size: 12px;
+    }
+    .inner-footer-content h2{
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    .quick-links ul li{
+        margin: 2px 0;
+    }
+    .quick-links ul li a{
+        font-size: 14px;
+    }
+    .social-media-icons img{
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 480px){
+    .navbar ul li a{
+        margin-right: 2px;
+        font-size: 15px;
+        color: #fff;
+    }
+    .navbar ul {
+        margin-right: 6px;
+    }
+
+    .categories-menubar span{
+        display: none;
+    }
+    .categories-menubar a{
+        font-size: 20px;
+    }
+    .home-banner img{
+        height: 165px;
+    }
+    .home-content{
+        top: 18%;
+        right: 2%;
+    }
+    .advantage-logo img{
+        width: 50px;
+        height: 42px;
+    }
+    .advantage-text {
+        padding: 8px 0;
+    }
+    .advantage-text h4{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .advantage-text p{
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 4px;
+    }
+
+   .section-title p{
+        font-size: 16px;
+    }
+    .section-title h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .offer-banner-text h2{
+        font-size: 12px;
+    }
+    .offer-banner-text a{
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+    .products .section-title h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .section-title a{
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+    .newsletter-bg-content{
+        top: 15%;
+        left: 15px;
+    }
+    .newsletter-bg-content p{
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+    .newsletter-bg-content h2{
+        font-size: 25px;
+    }
+    .newsletter-bg-content input[type="email"] {
+        font-size: 12px;
+        padding: 5px 10px;
+        width: 200px;
+
+    }
+    .newsletter-bg-content input[type="submit"]{
+        font-size: 12px;
+        padding: 3px 5px;
+        margin-left: 0px;
+    }
+    .download-qr-code .qr-img img{
+        display: none;
+    }
+    .apps-store {
+        margin-left: 0;
+    }
+    .footer-content{
+        margin-bottom: 20px;
+    }
+    .footer-bottom p{
+        font-size: 12px;
+        padding: 15px 0;
+    }
+}

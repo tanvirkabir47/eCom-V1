@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===========Color variable===============*/
+
+:root {
+    --primary-color: #3BB77E;
+    --secondary-color: #000000;
+}
+
+
+/*===================Default Style Start======================*/
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+}
+
+.container{
+    max-width: 1286px;
+}
+.section-padding {
+    padding: 30px 0;
+}
+
+img{
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.align-center{
+    align-items: center;
+}
+.section-title p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--primary-color);
+}
+.section-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+
+/*
+===============================================================================
+===============================  Top Header Section  ==========================
+===============================================================================
+*/
+
+/* Scroll up */
+
+.scroll-up-btn{
+    position: fixed;
+    height: 34px;
+    width: 32px;
+    background: #222;
+    opacity: .5;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 25px;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Sticky Nav */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: var(--primary-color);
+    color: #fff;
+    transition: .5s;
+}
+.sticky .navbar li a{
+    color: #fff;
+}
+
+.sticky .phone-num a{
+    color: #fff;
+}
+.sticky .phone-num p{
+    color: #fff;
+}
+
+/* Menu btn */
+
+.menu-btn{
+    z-index: 4;
+}
+.menu-btn i.active:before{
+        content: "\f00d";
+    }
+.menubar-section .menu{
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+    padding-top: 20px;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 3;
+}
+.menubar-section .menu.active{
+    display: block;
+}
+.menubar-section .menu li{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+.menubar-section .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+
+
+.top-header{
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+}
+.logo a{
+    display: flex;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.logo h3{
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #C88DF8;
+    margin-top: 30px;
+}
+
+.search-box{
+    position: relative;
+}
+.search-box img {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    background: #F9F9F9;
+    border: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.search-box input[type="search"] {
+    width: 100%;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+    padding-left: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.categories-list{
+    right: 3%;
+    position: absolute;
+    top: 35%;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.categories-list select{
+    border: none;
+    cursor: pointer;
+} 
+.categories-list select:focus{
+    border: none;
+}
+
+.account-section {
+    display: flex;
+    justify-content: space-between;
+}
+.language-select{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-color);
+}
+.language-select select{
+    width: 56px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.account img{
+    margin-left: 20px;
+}
+
+
+/*
+===============================================================================
+===============================  NavBar Section  ==============================
+===============================================================================
+*/
+
+.menubar-section{
+    border-top: 1px solid #D4D4D4;
+}
+
+.categories-menubar{
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    cursor: pointer;
+}
+.categories-menubar a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.categories-menubar span{
+    margin-left: 10px;
+}
+.navbar{
+    padding: 17px 0;
+    align-items: center;
+}
+.navbar ul{
+    margin-left: 10px;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-right: 20px;
+}
+.phone-num {
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+    float: right;
+}
+.phone-num a{
+    color: var(--secondary-color);
+}
+.phone-num p{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    margin-left: 10px;
+}
+
+/*
+===============================================================================
+===============================  Home Section  ================================
+===============================================================================
+*/
+
+.home-banner{
+    position: relative;
+}
+.home-banner img{
+    width: 100%;
+    height: 100%;
+}
+.home-content{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.home-content .text-1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #999999;
+    margin-bottom: 10px;
+}
+.home-content .text-2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    margin-bottom: 27px;
+}
+.home-content a{
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+}
+
+/*
+===============================================================================
+===============================  Advantage Section  ===========================
+===============================================================================
+*/
+
+.advantage-items{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-auto-flow: dense;
+    margin: 20px auto;
+}
+.advantage-single-item{
+    display: flex;
+    align-items: center;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0 12px;
+}
+.advantage-logo{
+    width: 50px;
+    height: 42px;
+}
+.advantage-text {
+    padding: 22px 0;
+    margin-left: 10px;
+}
+.advantage-text h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-color);
+}
+.advantage-text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-color);
+    margin-top: 6px;
+}
+
+/*
+===============================================================================
+===============================  Categories Section  ==========================
+===============================================================================
+*/
+
+.category-items{
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit,minmax(140px, 1fr));
+    grid-auto-flow: dense;
+    margin: 0 auto;
+}
+.category-single-item{
+    background: #F9F9F9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: center;
+    padding: 29px 43px;
+    transition: .5s;
+}
+.category-single-item:hover{
+    transform: scale(1.1);
+}
+.category-single-item img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 9px;
+}
+.category-single-item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-color);
+}
+
+/*
+===============================================================================
+===============================  Selling Section  =============================
+===============================================================================
+*/
+
+.selling-items{
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    grid-auto-flow: dense;
+    margin: 0 auto;
+}
+
+.selling-single-item{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.selling-single-item img{
+    width: 244px;
+    height: 244px;
+    display: flex;
+    margin: auto;
+}
+
+.selling-single-item p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--primary-color);
+    margin-bottom: 3px;
+}
+
+.selling-single-item h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.selling-single-item .star a{
+    color: orange;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+.selling-text{
+    margin-left: 6px;
+}
+.pricing .offer-price{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-color);
+    margin-right: 17px;
+}
+
+.pricing .regular-price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    text-decoration-line: line-through;
+}
+.pricing a{
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 16px;
+    margin-left: auto;
+    margin-right: 6px;
+}
+.pricing a i{
+    margin-right: 8px;
+}
+.hover-icon{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: .5s;
+    margin-top: 50px;
+}
+.hover-icon a{
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: 5px 8px;
+    font-size: 18px;
+}
+
+.selling-image{
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.selling-image:hover{
+    transform: scale(1.2);
+}
+.selling-image:hover .hover-icon{
+    visibility: visible;
+    margin-top: 0;
+    z-index: 2;
+}
+.selling-hover-overlay:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    width: 100%;
+    height: 90%;
+    visibility: hidden;
+    overflow: hidden;
+}
+.selling-image:hover .selling-hover-overlay:after{
+    visibility: visible;
+}
+
+/*
+===============================================================================
+===============================  Offer Banner Section  ========================
+===============================================================================
+*/
+
+.offer-banner-image{
+    position: relative;
+}
+.offer-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.offer-banner-text h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.offer-requirment{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+.offer-requirment p{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.offer-banner-text a{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    background: #fff;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+/*
+===============================================================================
+===============================  Product Section  =============================
+===============================================================================
+*/
+
+.section-title a{
+    float: right;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: var(--primary-color);
+    padding: 12px 10px;
+    border-radius: 5px;
+    margin-top: -60px;
+}
+
+
+/*
+===============================================================================
+===============================  Newsletter Section  ==========================
+===============================================================================
+*/
+
+.newsletter-overlay{
+    position: relative;
+}
+.newsletter-bg-overlay:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.newsletter-bg-content{
+    position: absolute;
+    top: 25%;
+    left: 85px;
+    color: #fff;
+    z-index: 1;
+}
+.newsletter-bg-content p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.newsletter-bg-content h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.newsletter-bg-content input[type="email"] {
+    background: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 444px;
+}
+.newsletter-bg-content input[type="submit"]{
+    background: #3BB77E;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 18px 20px;
+    margin-left: 12px;
+}
+
+
+/*
+===============================================================================
+===============================  Newsletter Section  ==========================
+===============================================================================
+*/
+.top-footer{
+    margin-top: 30px;
+}
+.footer-content{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-auto-flow: dense;
+    margin-bottom: 60px;
+}
+.footer-contact h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.footer-content p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+.inner-footer-content h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-top: 40px;
+}
+.quick-links ul{
+    margin-top: 10px;
+}
+.quick-links ul li{
+    margin: 5px 0;
+}
+.quick-links ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+.download-apps p{
+    margin: 15px 0;
+    width: 176px;
+}
+.download-qr-code{
+    display: flex;
+}
+.download-qr-code .qr-img img{
+    width: 135px;
+    height: 100px;
+}
+.apps-store {
+    margin-left: 20px;
+}
+.apps-store img:first-child{
+    margin-bottom: 15px;
+}
+.social-media-icons h2{
+    margin-bottom: 15px;
+}
+.social-media-icons img{
+    margin-right: 15px;
+}
+.payment-method h2{
+    margin-bottom: 15px;
+}
+.footer-bottom{
+    border-top: 1px solid #D4D4D4;
+    padding-bottom: 0;
+}
+.footer-bottom p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding: 30px 0;
+}
